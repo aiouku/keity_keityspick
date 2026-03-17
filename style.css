@@ -1,0 +1,1451 @@
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  /*debug*/
+}
+
+body {
+  background: #efebe0;
+  overflow-x: hidden;
+}
+
+/* ===== UTILITIES ===== */
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+.fit-contain {
+  object-fit: contain;
+}
+
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.text-48 {
+  font-size: 48px !important;
+}
+
+/* 共通セクションタイトル */
+.section-title {
+  position: absolute;
+  top: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 96px;
+  font-weight: 500;
+  color: #1f1f1f;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* 画像変形・回転用ラッパー */
+.decor-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.decor-inner {
+  flex-shrink: 0;
+}
+
+/* カードボーダー */
+.card-border {
+  position: absolute;
+  background: rgba(217, 217, 217, 0);
+  border: 6px solid #64635f;
+  border-radius: 18px;
+  z-index: 2;
+}
+
+/* 影（ドロップシャドウ） */
+.drop-shadow {
+  position: absolute;
+  border-radius: 18px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.drop-shadow img {
+  /* 黒い影を枠の色と同じ #64635f に変換するCSSフィルター */
+  filter: brightness(0) saturate(100%) invert(43%) sepia(3%) saturate(1212%) hue-rotate(15deg) brightness(0%) contrast(85%);
+}
+
+/* ===== STICKY ZONE (NAV + FV + RECOMMEND) ===== */
+.sticky-zone {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  background: url("images/FV.png") no-repeat top left;
+  background-size: 1440px auto;
+}
+
+/* ===== NAV ===== */
+.site-nav {
+  position: absolute;
+  top: 0;
+  width: 1440px;
+  height: 269px;
+  background: #f8f4e9;
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.57);
+  z-index: 100;
+}
+
+.nav-title-bg {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Oswald", sans-serif;
+  font-size: 96px;
+  font-weight: 500;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.6);
+  line-height: normal;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.nav-subtitle {
+  position: absolute;
+  top: 137px;
+  left: calc(50% - 192px);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1f1f1f;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.nav-link {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1f1f1f;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #90152b;
+}
+
+.nav-recommend {
+  top: 216px;
+  left: calc(50% - 552px);
+}
+
+.nav-gallery {
+  top: 214px;
+  left: calc(50% - 216px);
+}
+
+.nav-keity {
+  top: 219px;
+  left: calc(50% + 123px);
+}
+
+.nav-timeline {
+  top: 219px;
+  left: calc(50% + 484px);
+}
+
+.sec-fv {
+  height: 615px;
+  margin-bottom: 269px;
+}
+
+/* ===== SECTIONS ===== */
+.sec-recommend,
+.sec-gallery,
+.sec-keity,
+.sec-timeline {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.sec-recommend {
+  height: 2124px;
+}
+
+.sec-gallery {
+  height: 1322px;
+}
+
+.sec-keity {
+  height: 560px;
+}
+
+.sec-timeline {
+  height: 3000px;
+}
+
+/* ===== MORE LINK ===== */
+.more-link {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #90152b;
+  line-height: normal;
+  cursor: pointer;
+  width: 234px;
+}
+
+.more-link:hover {
+  opacity: 0.8;
+}
+
+.relative-more {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* ===== RECOMMEND SPECIFICS ===== */
+.title-recommend {
+  left: 95px;
+}
+
+/* Background Decorations */
+.decor-coffee-1 {
+  width: 1388.6px;
+  height: 1391.2px;
+  left: -92.1px;
+  top: 264.6px;
+}
+
+.decor-coffee-1-inner {
+  transform: rotate(46.64deg);
+}
+
+.decor-coffee-1-img {
+  position: relative;
+  overflow: hidden;
+  width: 1015.9px;
+  height: 950.6px;
+  opacity: 0.51;
+}
+
+.absolute-scale {
+  position: absolute;
+  width: 137.16%;
+  height: 145.02%;
+  top: -45.02%;
+  left: -37.16%;
+  max-width: none;
+}
+
+.decor-bgm-1 {
+  width: 790.6px;
+  height: 642.4px;
+  left: calc(50% - 30px);
+  top: 421px;
+}
+
+.decor-bgm-1-inner {
+  transform: rotate(11.03deg);
+}
+
+.decor-bgm-1-img {
+  display: block;
+  width: 704.7px;
+  height: 517.1px;
+  opacity: 0.8;
+}
+
+.rec-main-shoe {
+  position: absolute;
+  top: 332px;
+  left: -81px;
+  width: 1057px;
+  height: 807px;
+  overflow: hidden;
+}
+
+/* Typography */
+.rec-series-title {
+  position: absolute;
+  top: 191px;
+  left: calc(50% - 592px);
+  width: 447px;
+  font-family: "Oswald", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: #1f1f1f;
+  line-height: normal;
+  letter-spacing: -1.28px;
+}
+
+.rec-main-title {
+  position: absolute;
+  top: 243px;
+  left: calc(50% - 592px);
+  width: 1004px;
+  font-family: "Oswald", sans-serif;
+  font-size: 138px;
+  font-weight: 600;
+  color: #90152b;
+  line-height: normal;
+  letter-spacing: -1.38px;
+}
+
+/* Logos */
+.rec-logo-aj {
+  position: absolute;
+  top: 460px;
+  left: calc(50% + 256px);
+  width: 197px;
+  height: 98px;
+}
+
+.rec-logo-jm {
+  position: absolute;
+  top: 842px;
+  left: calc(50% + 381px);
+  width: 197px;
+  height: 169px;
+}
+
+.rec-tagline-wrapper {
+  width: 495.3px;
+  height: 174.6px;
+  left: calc(50% + 154.8px);
+  top: 648.7px;
+}
+
+.rec-tagline-inner {
+  transform: rotate(8.02deg);
+}
+
+.rec-tagline {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #1f1f1f;
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+  width: 485px;
+}
+
+.more-rec-1 {
+  top: 914px;
+  left: calc(50% - 24px);
+}
+
+/* Chicago Section */
+.decor-bgm-2 {
+  width: 1069.5px;
+  height: 673.9px;
+  left: calc(50% - 459.7px);
+  top: 1227.4px;
+}
+
+.decor-bgm-2-inner {
+  transform: rotate(8deg);
+}
+
+.decor-bgm-2-img {
+  display: block;
+  width: 1004.2px;
+  height: 539.3px;
+  opacity: 0.8;
+}
+
+.rec-chicago-vert {
+  width: 220px;
+  height: 596px;
+  left: calc(50% - 592px);
+  top: 1115px;
+}
+
+.rec-chicago-vert-inner {
+  transform: rotate(90deg);
+}
+
+.chicago-vert-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 166px;
+  font-weight: 700;
+  color: #90152b;
+  line-height: normal;
+  letter-spacing: -4.98px;
+  white-space: nowrap;
+}
+
+.rec-chicago-shoe-wrapper {
+  width: 888.2px;
+  height: 698px;
+  left: calc(50% - 301px);
+  top: 1291px;
+}
+
+.rec-chicago-shoe-inner {
+  transform: rotate(8deg);
+}
+
+.rec-chicago-shoe-container {
+  overflow: hidden;
+  border-radius: 31px;
+  position: relative;
+  width: 814px;
+  height: 590.5px;
+}
+
+.absolute-scale-chicago {
+  position: absolute;
+  width: 127.66%;
+  height: 117.28%;
+  top: -17.28%;
+  left: -13.7%;
+  max-width: none;
+}
+
+.rec-chicago-title-wrapper {
+  width: 454.3px;
+  height: 319.7px;
+  left: calc(50% - 387px);
+  top: 1291px;
+}
+
+.rec-chicago-title-inner {
+  transform: rotate(8deg);
+}
+
+.chicago-title {
+  width: 421.7px;
+  height: 263.6px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f1f1f;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+}
+
+.rec-chicago-desc-wrapper {
+  width: 444.2px;
+  height: 318.3px;
+  left: calc(50% - 394px);
+  top: 1365.7px;
+}
+
+.rec-chicago-desc-inner {
+  transform: rotate(8deg);
+}
+
+.chicago-desc {
+  width: 411.5px;
+  height: 263.6px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1f1f1f;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+.more-rec-chicago-wrapper {
+  width: 155.8px;
+  height: 79.2px;
+  left: calc(50% - 354px);
+  /* -394px → -384px で10px右に */
+  top: 1671px;
+  pointer-events: auto;
+}
+
+.more-rec-chicago-inner {
+  transform: rotate(8deg);
+}
+
+.decor-swreds {
+  width: 821.1px;
+  height: 481.5px;
+  left: calc(50% - 117px);
+  top: 1727px;
+  z-index: -1;
+}
+
+.decor-swreds-inner {
+  transform: rotate(76.9deg);
+}
+
+.decor-swreds-img {
+  display: block;
+  width: 315.2px;
+  height: 769.7px;
+}
+
+.decor-badge {
+  width: 277.8px;
+  height: 277.8px;
+  left: calc(50% + 25.4px);
+  top: 1149.8px;
+}
+
+.decor-badge-inner {
+  transform: rotate(-17.93deg);
+}
+
+.decor-badge-img {
+  display: block;
+  width: 220.6px;
+  height: 220.6px;
+}
+
+/* ===== GALLERY SPECIFICS ===== */
+.title-gallery {
+  left: 94px;
+}
+
+.decor-supreme {
+  width: 862.7px;
+  height: 666.9px;
+  left: calc(50% - 38px);
+  top: 822px;
+  z-index: -1;
+  /* セクションの背景の下へ */
+}
+
+.decor-supreme-inner {
+  transform: rotate(-30.27deg);
+}
+
+.decor-supreme-img {
+  display: block;
+  width: 831.3px;
+  height: 287.1px;
+  opacity: 0.13;
+}
+
+.decor-cactus {
+  width: 431px;
+  height: 500px;
+  /* 333px → 500px に拡大 */
+  left: calc(50% - 824px);
+  top: 822px;
+  z-index: -1;
+}
+
+.decor-cactus-inner {
+  transform: rotate(30.27deg);
+}
+
+.decor-cactus-img {
+  display: block;
+  width: 316px;
+  height: 244px;
+  opacity: 0.95;
+}
+
+/* Flexbox Gallery Layout */
+.gal-cards-container {
+  position: absolute;
+  top: 142px;
+  /* Matches highest element (gal-left) */
+  left: calc(50% - 620px);
+  /* Matches furthest left element */
+  display: flex;
+  gap: 36px;
+  /* Approx gap between left and middle columns: center left is -53px. 620-53 = 567. 567 - 534 (left width) = 33px */
+  align-items: flex-start;
+}
+
+.gal-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LEFT COLUMN */
+/* Top 142px left -620 relative to 50% => 0 relative to container */
+.gal-card-left {
+  position: relative;
+  width: 534px;
+  height: 750px;
+  /* border is 642, container is 681 */
+}
+
+.gal-left-wrapper {
+  width: 529px;
+  height: 750px;
+  top: 0;
+  left: 8px;
+  z-index: 3;
+  /* -612 relative to -620 */
+}
+
+.border-left {
+  top: 45px;
+  left: 0;
+  width: 534px;
+  height: 642px;
+}
+
+.shadow-left {
+  top: 45px;
+  left: 0;
+  width: 534px;
+  height: 153px;
+}
+
+.more-gal-left {
+  top: 588px;
+  /* 568 + 20 */
+  left: 410px;
+  /* 440 - 30 */
+  z-index: 5;
+}
+
+/* left was calc(50% + 160) which means 780 from left edge of container */
+
+/* CENTER COLUMN */
+/* left was -53 relative to 50%. -620 to -53 is 567px diff. gap 36 + 534 = 570, close enough, but let's use exact relative values inside cards */
+.gal-col-center {
+  gap: 31px;
+  /* Between cards */
+}
+
+
+.gal-card-center-top {
+  position: relative;
+  width: 340px;
+  height: 357px;
+}
+
+.gal-img.gal-center-top {
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.gal-img.gal-center-bot {
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.border-center-top {
+  top: 0;
+  left: 3px;
+  width: 337px;
+  height: 357px;
+}
+
+.shadow-center-top {
+  top: 0;
+  left: 3px;
+  width: 337px;
+  height: 95px;
+}
+
+.more-gal-ct {
+  top: 290px;
+  /* 270 + 20 */
+  left: 200px;
+  /* 230 - 30 */
+  z-index: 5;
+}
+
+/* more-gal-2 */
+
+.gal-card-center-mid {
+  position: relative;
+  width: 340px;
+  height: 289px;
+}
+
+.gal-center-mid {
+  top: 0;
+  left: 3px;
+  width: 337px;
+  height: 273px;
+}
+
+.border-center-mid {
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 289px;
+}
+
+.shadow-center-mid {
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 95px;
+}
+
+.more-gal-cm {
+  top: 220px;
+  /* 200 + 20 */
+  left: 210px;
+  /* 240 - 30 */
+  z-index: 5;
+}
+
+/* more-gal-3 */
+.gal-col-center {
+  gap: 0;
+  /* gapを無効化 */
+}
+
+.gal-card-center-mid {
+  margin-top: 31px;
+  /* 上→中の間隔 */
+}
+
+.gal-card-center-bot {
+  position: relative;
+  width: 340px;
+  height: 233px;
+  margin-top: 32px;
+}
+
+/* Negative margin to adjust vertical spacing exactly to 872px */
+.gal-center-bot {
+  top: 35px;
+  left: 3px;
+  width: 337px;
+  height: 162px;
+}
+
+.border-center-bot {
+  top: 0;
+  left: 0;
+  width: 335px;
+  height: 233px;
+}
+
+.shadow-center-bot {
+  top: 0;
+  left: 0;
+  width: 335px;
+  height: 95px;
+}
+
+.more-gal-cb {
+  top: 165px;
+  /* 145 + 20 */
+  left: 210px;
+  /* 240 - 30 */
+  z-index: 5;
+}
+
+.more-gal-rb {
+  top: 200px;
+  left: 120px;
+  z-index: 5;
+}
+
+.more-gal-left {
+  height: 150px;
+  top: 488px;
+  left: 210px;
+  z-index: 10;
+  writing-mode: vertical-rl;
+}
+
+/* more-gal-4 */
+
+/* RIGHT COLUMN */
+.gal-col-right {
+  margin-left: -5px;
+  /* Adjusting gap exactness: right col left was 317. from -620 that's 937. Left 534 + 36 gap + center 340 = 910. Need more gap or margin */
+  padding-left: 26px;
+  /* To exactly land at +317 from center */
+  gap: 31px;
+}
+
+.gal-card-right-top {
+  position: relative;
+  width: 308px;
+  height: 266px;
+}
+
+.gal-img.gal-right-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.border-right-top {
+  top: 0;
+  left: 0;
+  width: 308px;
+  height: 266px;
+}
+
+.shadow-right-top {
+  top: 0;
+  left: 0;
+  width: 308px;
+  height: 87px;
+}
+
+.more-gal-rt {
+  top: 200px;
+  /* 180 + 20 */
+  left: 180px;
+  /* 210 - 30 */
+  z-index: 5;
+}
+
+/* more-gal-5 */
+
+.gal-card-right-mid {
+  position: relative;
+  width: 308px;
+  height: 272px;
+}
+
+.gal-img.gal-right-mid {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+
+.border-right-mid {
+  top: 0;
+  left: 0;
+  width: 308px;
+  height: 272px;
+}
+
+.shadow-right-mid {
+  top: 0;
+  left: 0;
+  width: 308px;
+  height: 89px;
+}
+
+.more-gal-rm {
+  top: 205px;
+  /* 185 + 20 */
+  left: 180px;
+  /* 210 - 30 */
+  z-index: 5;
+}
+
+/* more-gal-6 */
+
+.gal-card-right-bot {
+  position: relative;
+  width: 310px;
+  height: 431px;
+  margin-top: 3px;
+}
+
+
+
+.border-right-bot {
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 267px;
+}
+
+.shadow-right-bot {
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 89px;
+}
+
+
+
+/* Adjusted offsets */
+
+/* Adjusting global styles for gallery structural dependencies */
+.gal-left-inner {
+  transform: rotate(180deg);
+}
+
+.gal-left-container {
+  overflow: hidden;
+  border-radius: 18px;
+  position: relative;
+  width: 529px;
+  height: 750px;
+}
+
+
+
+.absolute-scale-gal-left {
+  position: absolute;
+  width: 142.62%;
+  height: 135.37%;
+  top: -19%;
+  left: -20.67%;
+  max-width: none;
+  z-index: 10;
+}
+
+.flip-x {
+  transform: scaleX(-1);
+}
+
+.absolute-scale-gal-rt {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scaleX(-1) scale(1.1) translateY(-14%);
+  /* 上に移動 */
+}
+
+.absolute-scale-gal-rm {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.1) translateY(14%);
+  /* 下に移動 */
+}
+
+.gal-img.gal-right-bot {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.absolute-scale-gal-rb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.1);
+}
+
+
+/* ===== KEITY'S GALLERY SPECIFICS ===== */
+.title-keity {
+  left: 89px;
+  color: black;
+}
+
+.decor-coffee-2 {
+  width: 1187.2px;
+  height: 1232.7px;
+  left: calc(50% - 172px);
+  top: 144px;
+  z-index: -1;
+  /* セクションの背景の下へ */
+}
+
+.decor-coffee-2-inner {
+  transform: rotate(105.48deg);
+}
+
+.decor-coffee-2-img {
+  position: relative;
+  overflow: hidden;
+  width: 1015.9px;
+  height: 950.6px;
+  opacity: 0.51;
+}
+
+/* Flexbox Container */
+.keity-cards-container {
+  position: absolute;
+  top: 169px;
+  left: 91px;
+  display: flex;
+  gap: 24px;
+  /* Space between cards */
+  width: 1258px;
+  /* Total width: 351 + 24 + 355 + 24 + 345 ~1300 but with original exact positions */
+  justify-content: space-between;
+}
+
+/* Individual Card */
+.keity-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Card Visual Wrapper */
+.keity-card-visual {
+  position: relative;
+  width: 355px;
+  /* Max width among the original 3 images */
+  height: 298px;
+  /* Image (259px) + padding/border + room for MORE link */
+}
+
+/* Adjustments for specific original widths */
+.keity-card:nth-child(1) .keity-card-visual {
+  width: 351px;
+}
+
+.keity-card:nth-child(3) .keity-card-visual {
+  width: 345px;
+}
+
+/* The Image */
+.keity-img {
+  position: absolute;
+  top: 7px;
+  /* Matches exact relative original tops: 176px vs 169px */
+  left: 0;
+  width: 100%;
+  height: 259px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.keity-card:nth-child(3) .keity-img {
+  top: 0;
+  /* Original img 3 was at 169px */
+}
+
+/* The Border */
+.card-border.border-keity {
+  position: absolute;
+  top: 21px;
+  /* 190 - 169 */
+  left: 3px;
+  /* 94 - 91 */
+  width: 345px;
+  height: 267px;
+  z-index: 2;
+}
+
+/* The Shadow */
+.drop-shadow.shadow-keity {
+  position: absolute;
+  top: 21px;
+  /* 190 - 169 */
+  left: 3px;
+  /* 94 - 91 */
+  width: 345px;
+  height: 98px;
+  z-index: 1;
+}
+
+/* MORE Link inside visual area */
+.more-keity {
+  position: absolute;
+  top: 229px;
+  /* Matches relative original top (398 - 169) */
+  left: 14px;
+  /* Matches original relative left (950 line) */
+  z-index: 3;
+}
+
+.keity-card:nth-child(1) .more-keity {
+  left: 214px;
+  top: 229px;
+}
+
+.keity-card:nth-child(2) .more-keity {
+  left: 193px;
+  top: 225px;
+}
+
+.keity-card:nth-child(3) .more-keity {
+  left: 184px;
+  top: 225px;
+}
+
+/* Card Text Wrapper */
+.keity-card-text {
+  margin-top: 41px;
+  /* Distance from top 169 to name top 469 => 300px relative offset */
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  /* 510 - 469 = 41px difference between text baselines */
+}
+
+.keity-card:nth-child(1) .keity-card-text {
+  margin-top: 24px;
+  padding-left: 4px;
+}
+
+.keity-card:nth-child(2) .keity-card-text {
+  margin-top: 24px;
+  padding-left: 5px;
+}
+
+.keity-card:nth-child(3) .keity-card-text {
+  margin-top: 31px;
+  padding-left: 4px;
+}
+
+
+.keity-name {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+  line-height: normal;
+  width: 100%;
+}
+
+.keity-desc {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  width: 100%;
+}
+
+/* ===== TIMELINE SPECIFICS ===== */
+.decor-bgl {
+  width: 3189.3px;
+  height: 3284.4px;
+  left: -962px;
+  top: 0;
+  z-index: -1;
+}
+
+.decor-bgl-inner {
+  transform: rotate(25.79deg);
+}
+
+.decor-bgl-img {
+  display: block;
+  width: 2321.7px;
+  height: 2525.9px;
+  opacity: 0.78;
+}
+
+.title-timeline {
+  top: 348px;
+  left: calc(50% - 611.62px);
+  color: black;
+}
+
+.decor-stussy {
+  position: absolute;
+  left: calc(50% + 109.38px);
+  top: 1297px;
+  width: 650px;
+  height: 650px;
+  opacity: 0.67;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Timeline Cards */
+.tl-card {
+  position: absolute;
+  background: #e0ddd6;
+  border: 5px solid #0a0000;
+  height: 400px;
+}
+
+.tl-card-1 {
+  left: calc(50% - 385.6px);
+  top: 629px;
+  width: 1020px;
+  border-radius: 19px;
+}
+
+.tl-card-2 {
+  left: calc(50% - 611.6px);
+  top: 1194.9px;
+  width: 996px;
+  border-radius: 20px;
+}
+
+.tl-card-3 {
+  left: calc(50% - 416.6px);
+  top: 1796px;
+  width: 1053px;
+  border-radius: 20px;
+}
+
+.tl-card-4 {
+  left: calc(50% - 587.6px);
+  top: 2403px;
+  width: 1138px;
+  border-radius: 20px;
+}
+
+/* Timeline Ghost Text */
+.tl-bg-text {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: rgba(144, 21, 43, 0.1);
+  line-height: normal;
+  height: 350px;
+  pointer-events: none;
+}
+
+.bg-text-1 {
+  left: calc(50% - 356.6px);
+  top: 623px;
+  width: 1020px;
+  font-size: 300px;
+}
+
+.bg-text-2 {
+  left: calc(50% - 597.6px);
+  top: 1184px;
+  width: 1020px;
+  font-size: 300px;
+}
+
+.bg-text-3 {
+  left: calc(50% - 385.6px);
+  top: 1822px;
+  width: 1237px;
+  font-size: 250px;
+}
+
+.bg-text-4 {
+  left: calc(50% - 573.6px);
+  top: 2399px;
+  width: 1237px;
+  font-size: 280px;
+}
+
+/* Timeline Images */
+.tl-img-wrapper-1 {
+  width: 976.9px;
+  height: 785.8px;
+  left: calc(50% - 623.3px);
+  top: 440.4px;
+}
+
+.tl-img-inner-1 {
+  transform: rotate(25deg);
+}
+
+.tl-img-1 {
+  display: block;
+  width: 860.8px;
+  height: 465.6px;
+}
+
+.tl-img-wrapper-2 {
+  width: 1044.8px;
+  height: 842.3px;
+  left: calc(50% - 428.6px);
+  top: 962.3px;
+}
+
+.tl-img-inner-2 {
+  transform: rotate(-27.58deg);
+}
+
+.tl-img-2 {
+  display: block;
+  width: 938.5px;
+  height: 460px;
+}
+
+.tl-img-wrapper-3 {
+  width: 968.3px;
+  height: 868.5px;
+  left: calc(50% - 376.1px);
+  top: 2091.6px;
+}
+
+.tl-img-inner-3 {
+  transform: rotate(-34.22deg);
+}
+
+.tl-img-3 {
+  display: block;
+  width: 849.7px;
+  height: 472.4px;
+}
+
+.tl-img-wrapper-4 {
+  width: 922.8px;
+  height: 714.7px;
+  left: 12.3px;
+  top: 1625.3px;
+}
+
+.tl-img-inner-4 {
+  transform: rotate(24.62deg);
+}
+
+.tl-img-4 {
+  display: block;
+  width: 828.9px;
+  height: 406.3px;
+}
+
+/* Badges */
+.tl-badge-aj {
+  position: absolute;
+  top: 591px;
+  left: calc(50% - 97.6px);
+  width: 254px;
+  height: 169px;
+}
+
+.tl-badge-skate-wrapper {
+  width: 85px;
+  height: 322px;
+  left: -34.6px;
+  top: 1592px;
+}
+
+.tl-badge-skate-inner {
+  transform: rotate(90deg);
+}
+
+.tl-badge-skate-container {
+  position: relative;
+  overflow: hidden;
+  width: 322px;
+  height: 85px;
+}
+
+.absolute-scale-skate {
+  position: absolute;
+  width: 100%;
+  height: 378.2%;
+  top: -141.35%;
+  left: 0;
+  max-width: none;
+}
+
+.tl-badge-sb-wrapper {
+  width: 187px;
+  height: 369px;
+  left: calc(50% + 538.4px);
+  top: 2205px;
+}
+
+.tl-badge-sb-inner {
+  transform: rotate(90deg);
+}
+
+.tl-badge-sb {
+  display: block;
+  width: 369px;
+  height: 187px;
+}
+
+/* Year text */
+.tl-year {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  font-size: 96px;
+  font-weight: 600;
+  color: #90152b;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.year-1 {
+  top: 661px;
+  left: calc(50% + 124.4px);
+}
+
+.year-2 {
+  top: 1234px;
+  left: calc(50% - 565.6px);
+  width: 474px;
+}
+
+.year-3 {
+  top: 1822px;
+  left: calc(50% + 139.4px);
+  width: 371px;
+}
+
+.year-4 {
+  top: 2433px;
+  left: calc(50% - 562.6px);
+  width: 371px;
+}
+
+/* Descriptions */
+.tl-desc {
+  position: absolute;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+  line-height: normal;
+}
+
+.desc-1 {
+  top: 803px;
+  left: calc(50% + 124.4px);
+  width: 458px;
+  line-height: 1.4;
+}
+
+.desc-2 {
+  top: 1381px;
+  left: calc(50% - 552.6px);
+  width: 433px;
+}
+
+.desc-3 {
+  top: 1962px;
+  left: calc(50% + 138.9px);
+  width: 443px;
+}
+
+.desc-4 {
+  top: 2569px;
+  left: calc(50% - 562.6px);
+  width: 400px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  width: 1440px;
+  margin: 300px 0px 20px 0px;
+  height: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-footer p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
