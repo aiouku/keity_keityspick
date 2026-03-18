@@ -16,7 +16,7 @@
 
 
 <body>
-  <div class="sticky-zone">
+  <div class="sticky-zone fade-in-section">
     <header class="site-nav">
       <p class="nav-title-bg">Keity's Picks</p>
       <p class="nav-subtitle">男子大学生のためのスニーカー図鑑</p>
@@ -30,6 +30,7 @@
 
     <section id="sec-recommend" class="sec-recommend">
       <p class="section-title title-recommend">RECOMMEND</p>
+      <p class="section-subtitle subtitle-recommend">絶対に推したいスニーカー</p>
 
       <div class="decor-wrapper decor-coffee-1">
         <div class="decor-inner decor-coffee-1-inner">
@@ -128,8 +129,9 @@
     </section>
   </div>
 
-  <section id="sec-gallery" class="sec-gallery">
+  <section id="sec-gallery" class="sec-gallery fade-in-section">
     <p class="section-title title-gallery">GALLERY</p>
+    <p class="section-subtitle subtitle-gallery">イチオシのスニーカー</p>
 
     <div class="decor-wrapper decor-supreme">
       <div class="decor-inner decor-supreme-inner">
@@ -147,7 +149,7 @@
 
       <!-- Left Column (1 large card) -->
       <div class="gal-col gal-col-left">
-        <div class="gal-card gal-card-left">
+        <div class="gal-card gal-card-left" data-modal="modal-gal-left">
           <div class="drop-shadow shadow-left">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
           </div>
@@ -166,7 +168,7 @@
       <!-- Center Column (3 medium cards) -->
       <div class="gal-col gal-col-center">
         <!-- Center Top -->
-        <div class="gal-card gal-card-center-top">
+        <div class="gal-card gal-card-center-top" data-modal="modal-gal-ct">
           <div class="drop-shadow shadow-center-top">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
           </div>
@@ -178,7 +180,7 @@
         </div>
 
         <!-- Center Mid -->
-        <div class="gal-card gal-card-center-mid">
+        <div class="gal-card gal-card-center-mid" data-modal="modal-gal-cm">
           <div class="drop-shadow shadow-center-mid">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
           </div>
@@ -190,7 +192,7 @@
         </div>
 
         <!-- Center Bot -->
-        <div class="gal-card gal-card-center-bot">
+        <div class="gal-card gal-card-center-bot" data-modal="modal-gal-cb">
           <div class="drop-shadow shadow-center-bot">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
           </div>
@@ -205,7 +207,7 @@
       <!-- Right Column (3 medium cards) -->
       <div class="gal-col gal-col-right">
         <!-- Right Top -->
-        <div class="gal-card gal-card-right-top">
+        <div class="gal-card gal-card-right-top" data-modal="modal-gal-rt">
           <div class="drop-shadow shadow-right-top">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
           </div>
@@ -217,7 +219,7 @@
         </div>
 
         <!-- Right Mid -->
-        <div class="gal-card gal-card-right-mid">
+        <div class="gal-card gal-card-right-mid" data-modal="modal-gal-rm">
           <div class="drop-shadow shadow-right-mid">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
           </div>
@@ -229,7 +231,7 @@
         </div>
 
         <!-- Right Bot -->
-        <div class="gal-card gal-card-right-bot">
+        <div class="gal-card gal-card-right-bot" data-modal="modal-gal-rb">
           <div class="drop-shadow shadow-right-bot">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
           </div>
@@ -244,8 +246,9 @@
     </div>
   </section>
 
-  <section id="sec-keity" class="sec-keity">
+  <section id="sec-keity" class="sec-keity fade-in-section">
     <p class="section-title title-keity">KEITY'S GALLERY</p>
+    <p class="section-subtitle subtitle-keity">Keityが所有するスニーカー</p>
 
     <div class="decor-wrapper decor-coffee-2">
       <div class="decor-inner decor-coffee-2-inner">
@@ -257,7 +260,7 @@
 
     <div class="keity-cards-container">
       <!-- Card 1 -->
-      <div class="keity-card">
+      <div class="keity-card" data-modal="modal-keity-1">
         <div class="keity-card-visual">
           <div class="drop-shadow shadow-keity">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
@@ -267,6 +270,7 @@
             <img src="images/AMB4.png" alt="Nike Air Max 95" class="fit-cover w-full h-full" />
           </div>
           <p class="more-link more-keity" data-modal="modal-keity-1">MORE &gt;</p>
+          <img src="images/keitys.png" alt="Keity's" class="keity-badge" />
         </div>
         <div class="keity-card-text">
           <p class="keity-name">NIKE AIRMAX 95</p>
@@ -275,7 +279,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="keity-card">
+      <div class="keity-card" data-modal="modal-keity-2">
         <div class="keity-card-visual">
           <div class="drop-shadow shadow-keity">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
@@ -285,6 +289,7 @@
             <img src="images/AFW4.png" alt="Nike Air Force 1 Wheat" class="fit-cover w-full h-full" />
           </div>
           <p class="more-link more-keity" data-modal="modal-keity-2">MORE &gt;</p>
+          <img src="images/keitys.png" alt="Keity's" class="keity-badge" />
         </div>
         <div class="keity-card-text">
           <p class="keity-name">NIKE AIRFORCE1 WHEAT</p>
@@ -293,7 +298,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="keity-card">
+      <div class="keity-card" data-modal="modal-keity-3">
         <div class="keity-card-visual">
           <div class="drop-shadow shadow-keity">
             <img src="images/drop.png" alt="" class="fit-cover w-full h-full" />
@@ -303,6 +308,7 @@
             <img src="images/DLV4.png" alt="Nike Dunk Low Velvet Brown" class="fit-cover w-full h-full" />
           </div>
           <p class="more-link more-keity" data-modal="modal-keity-3">MORE &gt;</p>
+          <img src="images/keitys.png" alt="Keity's" class="keity-badge" />
         </div>
         <div class="keity-card-text">
           <p class="keity-name">NIKE DUNK LOW VelvetBrown</p>
@@ -312,7 +318,7 @@
     </div>
   </section>
 
-  <section id="sec-timeline" class="sec-timeline">
+  <section id="sec-timeline" class="sec-timeline fade-in-section">
     <div class="decor-wrapper decor-bgl">
       <div class="decor-inner decor-bgl-inner">
         <img src="images/BGL.jpg" alt="" class="fit-cover decor-bgl-img" />
@@ -320,6 +326,7 @@
     </div>
 
     <p class="section-title title-timeline">TIMELINE</p>
+    <p class="section-subtitle subtitle-timeline">スニーカーのカルチャーが丸わかり</p>
 
     <div class="decor-stussy">
       <img src="images/stussy.png" alt="" class="fit-cover w-full h-full" />
@@ -400,25 +407,26 @@
     </p>
   </section>
 
-  <footer class="site-footer">
+  <footer class="site-footer fade-in-section">
     <p>© 2026 Kei Tanaka. All Rights Reserved.</p>
   </footer>
+  <!-- Modal: Recommend Lost & Found -->
   <!-- Modal: Recommend Lost & Found -->
   <div class="modal-overlay" id="modal-rec-1">
     <div class="modal-content">
       <button class="modal-close">&times;</button>
-      <h2 class="modal-title font-oswald">AIRJORDAN1 Lost & Found</h2>
-      <p class="modal-desc">Air Jordan 1 High OG "Chicago Lost &
+      <h2 class="modal-title font-oswald">AIRJORDAN1 Lost &amp; Found</h2>
+      <p class="modal-desc">Air Jordan 1 High OG "Chicago Lost &amp;
         Found"は、バスケットボールとスニーカーカルチャーを一変させたAJ1の原点を、物語ごと蘇らせた一足だ。1985年に誕生したAir Jordan
         1は、当時のNBAルールに反する大胆なカラーでリーグから罰金を科されながらも、その反骨精神ごと伝説になったモデル。そして"Chicago"は、赤・白・黒で構成された最も象徴的なオリジナルカラーであり、マイケル・ジョーダンのキャリアの始まりを刻んだ歴史的配色だ。"Lost
-        &
+        &amp;
         Found"は、そのChicagoがまるで倉庫で眠っていたデッドストックとして発見されたかのようなコンセプトで再構築されている。日焼けしたようなヴィンテージ風ボックスや手書き風レシート、あえてひび割れさせたレザー、エイジドSailのミッドソールまで徹底的に作り込み、単なる復刻ではなく"再会"という体験に昇華させた。これは懐古のための一足ではない。スニーカー史の出発点を、現代のクオリティで履くという贅沢そのもの。原点であり頂点、今あらためて選ぶなら間違いなく最強の1足。
       </p>
       <div class="modal-thumbs">
         <div class="modal-thumb"><img src="images/recommend1.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/recommend2.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://snkrdunk.com/products/DZ5485-612" target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -426,18 +434,18 @@
   <div class="modal-overlay" id="modal-rec-chicago">
     <div class="modal-content">
       <button class="modal-close">&times;</button>
-      <h2 class="modal-title font-oswald">AIRJORDAN1 Lost & Found</h2>
-      <p class="modal-desc">Air Jordan 1 High OG "Chicago Lost &
+      <h2 class="modal-title font-oswald">AIRJORDAN1 Lost &amp; Found</h2>
+      <p class="modal-desc">Air Jordan 1 High OG "Chicago Lost &amp;
         Found"は、バスケットボールとスニーカーカルチャーを一変させたAJ1の原点を、物語ごと蘇らせた一足だ。1985年に誕生したAir Jordan
         1は、当時のNBAルールに反する大胆なカラーでリーグから罰金を科されながらも、その反骨精神ごと伝説になったモデル。そして"Chicago"は、赤・白・黒で構成された最も象徴的なオリジナルカラーであり、マイケル・ジョーダンのキャリアの始まりを刻んだ歴史的配色だ。"Lost
-        &
+        &amp;
         Found"は、そのChicagoがまるで倉庫で眠っていたデッドストックとして発見されたかのようなコンセプトで再構築されている。日焼けしたようなヴィンテージ風ボックスや手書き風レシート、あえてひび割れさせたレザー、エイジドSailのミッドソールまで徹底的に作り込み、単なる復刻ではなく"再会"という体験に昇華させた。これは懐古のための一足ではない。スニーカー史の出発点を、現代のクオリティで履くという贅沢そのもの。原点であり頂点、今あらためて選ぶなら間違いなく最強の1足。
       </p>
       <div class="modal-thumbs">
         <div class="modal-thumb"><img src="images/recommend1.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/recommend2.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://snkrdunk.com/products/DZ5485-612" target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -456,7 +464,8 @@
         <div class="modal-thumb"><img src="images/AFWH3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/AFWH4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://www.nike.com/jp/t/%E3%83%8A%E3%82%A4%E3%82%AD-%E3%82%A8%E3%82%A2-%E3%83%95%E3%82%A9%E3%83%BC%E3%82%B9-1-07-%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-55GJLx/CW2288-111"
+        target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -465,7 +474,7 @@
     <div class="modal-content">
       <button class="modal-close">&times;</button>
       <h2 class="modal-title font-oswald">Tiffany × AIRFORCE1</h2>
-      <p class="modal-desc">プレミアムなブラックスエードに Tiffany Blue のスウッシュを組み合わせた特別な一足、Nike Air Force 1 1837 Tiffany &
+      <p class="modal-desc">プレミアムなブラックスエードに Tiffany Blue のスウッシュを組み合わせた特別な一足、Nike Air Force 1 1837 Tiffany &amp;
         Co。シュータンにはアーカイブのTiffanyロゴを配置し、フォームミッドソールとラバーアウトソール、そしてTiffany Blueのアクセントが入ったピボットポイントが特徴。</p>
       <div class="modal-main-img img-normal">
         <img src="images/AFT1.png" alt="" class="fit-cover w-full h-full" />
@@ -475,7 +484,7 @@
         <div class="modal-thumb"><img src="images/AFT3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/AFT4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://snkrdunk.com/products/DZ1382-001" target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -495,7 +504,8 @@
         <div class="modal-thumb"><img src="images/AJH3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/AJH4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://www.nike.com/jp/launch/t/air-jordan-1-hyper-royal" target="_blank"
+        class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -505,7 +515,7 @@
       <button class="modal-close">&times;</button>
       <h2 class="modal-title font-oswald">DUNKLOW Chunky Dunky</h2>
       <p class="modal-desc">ナイキSBが誇る人気モデルのローカットをベースにした Nike SB Dunk Low 'Chunky
-        Dunky'。ベン&ジェリーズの人気フレーバー「チャンキーモンキー」と象徴的なカップデザインに着想を得て、青空や丘、ミルクを搾る牛柄、溶けたアイスを思わせるスウッシュ、レインボーカラーの履き口などを採用。ポップで目を引くデザインに仕上がっている。
+        Dunky'。ベン&amp;ジェリーズの人気フレーバー「チャンキーモンキー」と象徴的なカップデザインに着想を得て、青空や丘、ミルクを搾る牛柄、溶けたアイスを思わせるスウッシュ、レインボーカラーの履き口などを採用。ポップで目を引くデザインに仕上がっている。
       </p>
       <div class="modal-main-img img-normal">
         <img src="images/AFB1.png" alt="" class="fit-cover w-full h-full" />
@@ -515,7 +525,7 @@
         <div class="modal-thumb"><img src="images/AFB3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/AFB4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://snkrdunk.com/products/CU3244-100" target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -535,7 +545,7 @@
         <div class="modal-thumb"><img src="images/NYR3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/NYR4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://snkrdunk.com/products/508214-660" target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -555,7 +565,7 @@
         <div class="modal-thumb"><img src="images/DLY3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/DLY4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://snkrdunk.com/products/FQ1180-001" target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -575,7 +585,7 @@
         <div class="modal-thumb"><img src="images/AFS3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/AFS4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://snkrdunk.com/products/CU9225-001" target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -595,7 +605,8 @@
         <div class="modal-thumb"><img src="images/AMB3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/AMB4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://www.nike.com/jp/t/%E3%83%8A%E3%82%A4%E3%82%AD-%E3%82%A8%E3%82%A2-%E3%83%9E%E3%83%83%E3%82%AF%E3%82%B9-95-%E3%83%93%E3%83%83%E3%82%B0-%E3%83%90%E3%83%96%E3%83%AB-%E3%83%A1%E3%83%B3%E3%82%BA%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-FYBmcShp/HM8755-001"
+        target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -614,7 +625,7 @@
         <div class="modal-thumb"><img src="images/AFW3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/AFW4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://snkrdunk.com/products/CJ9179-200" target="_blank" class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
 
@@ -634,14 +645,21 @@
         <div class="modal-thumb"><img src="images/DLV3.png" alt="" class="fit-cover w-full h-full" /></div>
         <div class="modal-thumb"><img src="images/DLV4.png" alt="" class="fit-cover w-full h-full" /></div>
       </div>
-      <p class="modal-cta font-oswald">GOT 'EM</p>
+      <a href="https://www.nike.com/jp/en/t/dunk-low-retro-premium-mens-shoes-hIG6Zums" target="_blank"
+        class="modal-cta font-oswald">GOT 'EM</a>
     </div>
   </div>
+
   <script>
-    document.querySelectorAll('.more-link[data-modal]').forEach(link => {
-      link.addEventListener('click', (e) => {
+    // カード全体 or MORE リンクのクリックでモーダルを開く
+    document.querySelectorAll('[data-modal]').forEach(el => {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', (e) => {
+        // 子要素の data-modal クリックが親にも伝播しないようにする
+        const target = e.target.closest('[data-modal]');
+        if (target !== el) return;
         e.preventDefault();
-        const modalId = link.getAttribute('data-modal');
+        const modalId = el.getAttribute('data-modal');
         const modal = document.getElementById(modalId);
         if (modal) modal.classList.add('is-open');
       });
@@ -656,6 +674,55 @@
     document.querySelectorAll('.modal-overlay').forEach(overlay => {
       overlay.addEventListener('click', (e) => {
         if (e.target === overlay) overlay.classList.remove('is-open');
+      });
+    });
+  </script>
+
+  <script>
+    // セクションごとのフェードインアニメーション
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in-section').forEach(section => {
+      fadeObserver.observe(section);
+    });
+  </script>
+
+  <script>
+    // ナビリンクのスムーススクロール
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if (target) {
+          const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+          const startPos = window.pageYOffset;
+          const distance = targetTop - startPos;
+          const duration = 800;
+          let startTime = null;
+
+          function easeInOutCubic(t) {
+            return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+          }
+
+          function animation(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo(0, startPos + distance * easeInOutCubic(progress));
+            if (elapsed < duration) requestAnimationFrame(animation);
+          }
+
+          requestAnimationFrame(animation);
+        }
       });
     });
   </script>

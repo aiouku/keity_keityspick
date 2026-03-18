@@ -52,6 +52,48 @@ body {
   white-space: nowrap;
 }
 
+.section-subtitle {
+  margin-top: 20px;
+  position: absolute;
+  top: 105px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #1f1f1f;
+  white-space: nowrap;
+}
+
+.subtitle-recommend {
+  left: 97px;
+}
+
+.subtitle-gallery {
+  left: 96px;
+}
+
+.subtitle-keity {
+  left: 91px;
+  color: black;
+}
+
+.subtitle-timeline {
+  top: 453px;
+  left: calc(50% - 609px);
+  color: black;
+}
+
+/* Section fade-in animation */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* 画像変形・回転用ラッパー */
 .decor-wrapper {
   position: absolute;
@@ -86,6 +128,22 @@ body {
 .drop-shadow img {
   /* 黒い影を枠の色と同じ #64635f に変換するCSSフィルター */
   filter: brightness(0) saturate(100%) invert(43%) sepia(3%) saturate(1212%) hue-rotate(15deg) brightness(0%) contrast(85%);
+}
+
+/* Gallery cards: hide drop-shadow & MORE on default, show on hover */
+.gal-card .drop-shadow,
+.gal-card .more-link,
+.keity-card .drop-shadow,
+.keity-card .more-link {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gal-card:hover .drop-shadow,
+.gal-card:hover .more-link,
+.keity-card:hover .drop-shadow,
+.keity-card:hover .more-link {
+  opacity: 1;
 }
 
 /* ===== STICKY ZONE (NAV + FV + RECOMMEND) ===== */
@@ -923,7 +981,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform: scaleX(-1) scale(1.1) translateY(-14%);
+  transform: scaleX(-1) scale(1.1) translateY(-6%);
   /* 上に移動 */
 }
 
@@ -931,8 +989,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform: scale(1.1) translateY(14%);
-  /* 下に移動 */
+  transform: scale(1.1) translateY(5%);
+  /* 少し下に移動（元14%→5%に上方向へ調整） */
 }
 
 .gal-img.gal-right-bot {
@@ -1129,6 +1187,16 @@ body {
   width: 100%;
 }
 
+.keity-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 120px;
+  height: 120px;
+  z-index: 10;
+  pointer-events: none;
+}
+
 /* ===== TIMELINE SPECIFICS ===== */
 .decor-bgl {
   width: 3189.3px;
@@ -1273,7 +1341,7 @@ body {
 .tl-img-2 {
   display: block;
   width: 938.5px;
-  height: 460px;
+  height: 560px;
 }
 
 .tl-img-wrapper-3 {
@@ -1307,7 +1375,7 @@ body {
 .tl-img-4 {
   display: block;
   width: 828.9px;
-  height: 406.3px;
+  height: 456.3px;
 }
 
 /* Badges */
@@ -1591,12 +1659,21 @@ body {
   font-size: 48px;
   font-weight: 700;
   color: #1f1f1f;
-  border-top: 4px solid #1f1f1f;
-  padding-top: 16px;
+  border-bottom: 4px solid #1f1f1f;
+  padding-bottom: 16px;
   width: fit-content;
   margin: 0 auto;
+  text-decoration: none;
+  display: block;
 }
 
 .more-link {
   pointer-events: auto;
+}
+
+
+
+.modal-cta:hover {
+  color: #90152b;
+  border-bottom-color: #90152b;
 }
