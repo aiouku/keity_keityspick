@@ -12,6 +12,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+<!-- Modal -->
+
 
 <body>
   <div class="sticky-zone">
@@ -66,7 +68,7 @@
         </div>
       </div>
 
-      <p class="more-link more-rec-1">MORE &gt;</p>
+      <p class="more-link more-rec-1" data-modal="modal-rec-chicago">MORE &gt;</p>
 
       <div class="decor-wrapper decor-bgm-2">
         <div class="decor-inner decor-bgm-2-inner">
@@ -107,7 +109,7 @@
 
       <div class="decor-wrapper more-rec-chicago-wrapper">
         <div class="decor-inner more-rec-chicago-inner">
-          <p class="more-link relative-more">MORE &gt;</p>
+          <p class="more-link relative-more" data-modal="modal-rec-chicago">MORE &gt;</p>
         </div>
       </div>
 
@@ -157,7 +159,7 @@
               </div>
             </div>
           </div>
-          <p class="more-link more-gal-left">MORE &gt;</p>
+          <p class="more-link more-gal-left" data-modal="modal-gal-left">MORE &gt;</p>
         </div>
       </div>
 
@@ -172,7 +174,7 @@
           <div class="gal-img gal-center-top">
             <img src="images/AFT4.png" alt="" class="fit-cover w-full h-full" />
           </div>
-          <p class="more-link more-gal more-gal-ct">MORE &gt;</p>
+          <p class="more-link more-gal more-gal-ct" data-modal="modal-gal-ct">MORE &gt;</p>
         </div>
 
         <!-- Center Mid -->
@@ -184,7 +186,7 @@
           <div class="gal-img gal-center-mid">
             <img src="images/AJH4.png" alt="" class="fit-cover w-full h-full" />
           </div>
-          <p class="more-link more-gal more-gal-cm">MORE &gt;</p>
+          <p class="more-link more-gal more-gal-cm" data-modal="modal-gal-cm">MORE &gt;</p>
         </div>
 
         <!-- Center Bot -->
@@ -196,7 +198,7 @@
           <div class="gal-img gal-center-bot">
             <img src="images/AFB4.png" alt="" class="fit-cover w-full h-full" />
           </div>
-          <p class="more-link more-gal more-gal-cb">MORE &gt;</p>
+          <p class="more-link more-gal more-gal-cb" data-modal="modal-gal-cb">MORE &gt;</p>
         </div>
       </div>
 
@@ -211,7 +213,7 @@
           <div class="gal-img gal-right-top">
             <img src="images/NYR4.png" alt="" class="absolute-scale-gal-rt" />
           </div>
-          <p class="more-link more-gal more-gal-rt">MORE &gt;</p>
+          <p class="more-link more-gal more-gal-rt" data-modal="modal-gal-rt">MORE &gt;</p>
         </div>
 
         <!-- Right Mid -->
@@ -223,7 +225,7 @@
           <div class="gal-img gal-right-mid">
             <img src="images/DLY4.png" alt="" class="absolute-scale-gal-rm" />
           </div>
-          <p class="more-link more-gal more-gal-rm">MORE &gt;</p>
+          <p class="more-link more-gal more-gal-rm" data-modal="modal-gal-rm">MORE &gt;</p>
         </div>
 
         <!-- Right Bot -->
@@ -235,7 +237,7 @@
           <div class="gal-img gal-right-bot">
             <img src="images/AFS5.png" alt="" class="absolute-scale-gal-rb" />
           </div>
-          <p class="more-link more-gal more-gal-rb">MORE &gt;</p>
+          <p class="more-link more-gal more-gal-rb" data-modal="modal-gal-rb">MORE &gt;</p>
         </div>
       </div>
 
@@ -264,7 +266,7 @@
           <div class="keity-img">
             <img src="images/AMB4.png" alt="Nike Air Max 95" class="fit-cover w-full h-full" />
           </div>
-          <p class="more-link more-keity">MORE &gt;</p>
+          <p class="more-link more-keity" data-modal="modal-keity-1">MORE &gt;</p>
         </div>
         <div class="keity-card-text">
           <p class="keity-name">NIKE AIRMAX 95</p>
@@ -282,7 +284,7 @@
           <div class="keity-img">
             <img src="images/AFW4.png" alt="Nike Air Force 1 Wheat" class="fit-cover w-full h-full" />
           </div>
-          <p class="more-link more-keity">MORE &gt;</p>
+          <p class="more-link more-keity" data-modal="modal-keity-2">MORE &gt;</p>
         </div>
         <div class="keity-card-text">
           <p class="keity-name">NIKE AIRFORCE1 WHEAT</p>
@@ -300,7 +302,7 @@
           <div class="keity-img">
             <img src="images/DLV4.png" alt="Nike Dunk Low Velvet Brown" class="fit-cover w-full h-full" />
           </div>
-          <p class="more-link more-keity">MORE &gt;</p>
+          <p class="more-link more-keity" data-modal="modal-keity-3">MORE &gt;</p>
         </div>
         <div class="keity-card-text">
           <p class="keity-name">NIKE DUNK LOW VelvetBrown</p>
@@ -401,6 +403,262 @@
   <footer class="site-footer">
     <p>© 2026 Kei Tanaka. All Rights Reserved.</p>
   </footer>
+  <!-- Modal: Recommend Lost & Found -->
+  <div class="modal-overlay" id="modal-rec-1">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">AIRJORDAN1 Lost & Found</h2>
+      <p class="modal-desc">Air Jordan 1 High OG "Chicago Lost &
+        Found"は、バスケットボールとスニーカーカルチャーを一変させたAJ1の原点を、物語ごと蘇らせた一足だ。1985年に誕生したAir Jordan
+        1は、当時のNBAルールに反する大胆なカラーでリーグから罰金を科されながらも、その反骨精神ごと伝説になったモデル。そして"Chicago"は、赤・白・黒で構成された最も象徴的なオリジナルカラーであり、マイケル・ジョーダンのキャリアの始まりを刻んだ歴史的配色だ。"Lost
+        &
+        Found"は、そのChicagoがまるで倉庫で眠っていたデッドストックとして発見されたかのようなコンセプトで再構築されている。日焼けしたようなヴィンテージ風ボックスや手書き風レシート、あえてひび割れさせたレザー、エイジドSailのミッドソールまで徹底的に作り込み、単なる復刻ではなく"再会"という体験に昇華させた。これは懐古のための一足ではない。スニーカー史の出発点を、現代のクオリティで履くという贅沢そのもの。原点であり頂点、今あらためて選ぶなら間違いなく最強の1足。
+      </p>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/recommend1.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/recommend2.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Recommend Chicago（Lost & Foundと同じ内容） -->
+  <div class="modal-overlay" id="modal-rec-chicago">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">AIRJORDAN1 Lost & Found</h2>
+      <p class="modal-desc">Air Jordan 1 High OG "Chicago Lost &
+        Found"は、バスケットボールとスニーカーカルチャーを一変させたAJ1の原点を、物語ごと蘇らせた一足だ。1985年に誕生したAir Jordan
+        1は、当時のNBAルールに反する大胆なカラーでリーグから罰金を科されながらも、その反骨精神ごと伝説になったモデル。そして"Chicago"は、赤・白・黒で構成された最も象徴的なオリジナルカラーであり、マイケル・ジョーダンのキャリアの始まりを刻んだ歴史的配色だ。"Lost
+        &
+        Found"は、そのChicagoがまるで倉庫で眠っていたデッドストックとして発見されたかのようなコンセプトで再構築されている。日焼けしたようなヴィンテージ風ボックスや手書き風レシート、あえてひび割れさせたレザー、エイジドSailのミッドソールまで徹底的に作り込み、単なる復刻ではなく"再会"という体験に昇華させた。これは懐古のための一足ではない。スニーカー史の出発点を、現代のクオリティで履くという贅沢そのもの。原点であり頂点、今あらためて選ぶなら間違いなく最強の1足。
+      </p>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/recommend1.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/recommend2.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Gallery Left -->
+  <div class="modal-overlay" id="modal-gal-left">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">AIRFORCE1 '07</h2>
+      <p class="modal-desc">快適で耐久性に優れ、時代を超えて愛され続ける理由を持つ一足、Nike Air Force
+        1。クラシックな80年代の構造をベースに、なめらかなレザーと大胆なデザインを組み合わせた仕上がり。コートの中でも外でも活躍する、普遍的なスタイルを体現している。</p>
+      <div class="modal-main-img">
+        <img src="images/AFWH1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/AFWH2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFWH3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFWH4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Gallery Center Top -->
+  <div class="modal-overlay" id="modal-gal-ct">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">Tiffany × AIRFORCE1</h2>
+      <p class="modal-desc">プレミアムなブラックスエードに Tiffany Blue のスウッシュを組み合わせた特別な一足、Nike Air Force 1 1837 Tiffany &
+        Co。シュータンにはアーカイブのTiffanyロゴを配置し、フォームミッドソールとラバーアウトソール、そしてTiffany Blueのアクセントが入ったピボットポイントが特徴。</p>
+      <div class="modal-main-img img-normal">
+        <img src="images/AFT1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/AFT2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFT3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFT4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Gallery Center Mid -->
+  <div class="modal-overlay" id="modal-gal-cm">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">AIRJORDAN1 HyperRoyal</h2>
+      <p class="modal-desc">発売から35年以上が経った今も、Air Jordan 1 High OG 'Hyper Royal'
+        は、あらゆるスタイルにマッチするデザインとして時代を問わず人々を魅了し続けている。トーンを抑えたカラーのシルエットに、ホワイトのベースとハイパーロイヤルのオーバーレイを採用。ライトスモークグレーのアクセントが、落ち着いたカラーを引き立てている。
+      </p>
+      <div class="modal-main-img">
+        <img src="images/AJH1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/AJH2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AJH3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AJH4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Gallery Center Bot -->
+  <div class="modal-overlay" id="modal-gal-cb">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">DUNKLOW Chunky Dunky</h2>
+      <p class="modal-desc">ナイキSBが誇る人気モデルのローカットをベースにした Nike SB Dunk Low 'Chunky
+        Dunky'。ベン&ジェリーズの人気フレーバー「チャンキーモンキー」と象徴的なカップデザインに着想を得て、青空や丘、ミルクを搾る牛柄、溶けたアイスを思わせるスウッシュ、レインボーカラーの履き口などを採用。ポップで目を引くデザインに仕上がっている。
+      </p>
+      <div class="modal-main-img img-normal">
+        <img src="images/AFB1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/AFB2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFB3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFB4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Gallery Right Top -->
+  <div class="modal-overlay" id="modal-gal-rt">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">AIR YEEZY 2 RedOctober</h2>
+      <p class="modal-desc">Nike Air Yeezy 2 SP 'Red October' は、Kanye West と Nike
+        のコラボレーションから生まれた象徴的な一足。全体を赤で統一した大胆なデザインに、メタリックゴールドのレースチップがアクセントを添える。サイドパネルには三角スタッズを並べ、強い存在感を放つ仕上がりとなっている。2014年のサプライズリリース以降、現在では二次市場で数十万円以上で取引されることも多い。
+      </p>
+      <div class="modal-main-img">
+        <img src="images/NYR1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/NYR2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/NYR3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/NYR4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Gallery Right Mid -->
+  <div class="modal-overlay" id="modal-gal-rm">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">DUNKLOW YutoHorigome</h2>
+      <p class="modal-desc">Nike SB Dunk Low 'Yuto Horigome' は、東京五輪スケートボード男子ストリートで金メダルを獲得した Yuto Horigome
+        とのコラボレーションモデル。堀米がスケートを始めた小松川公園をイメージし、ホワイトレザーにグレーやブラウンのスウェードを重ね、淡いピンクのアクセントをプラス。ヒールやシュータン裏には家紋から着想を得たアイコン、シュータンには「YUTO
+        HORIGOME」の文字が入る。</p>
+      <div class="modal-main-img">
+        <img src="images/DLY1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/DLY2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/DLY3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/DLY4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Gallery Right Bot -->
+  <div class="modal-overlay" id="modal-gal-rb">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">SUPREME × AIRFORCE1</h2>
+      <p class="modal-desc">Supreme x Nike Air Force 1 Low 'Mini Box Logo Black' は、Supreme と Nike
+        のコラボレーションから生まれたミニマルな一足。ブラックのスムースレザーアッパーに、ヒールには小さなレッドのSupreme Box
+        Logoを配置。ゴールドの「AF1」デュブレやSupremeロゴ入りのシューレースがアクセントとなり、シンプルながら存在感のある仕上がりとなっている。</p>
+      <div class="modal-main-img">
+        <img src="images/AFS1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/AFS2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFS3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFS4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Keity 1 -->
+  <div class="modal-overlay" id="modal-keity-1">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">AIRMAX 95 BIGBUBBLE</h2>
+      <p class="modal-desc">Nike Air Max 95
+        は、人間の身体と90年代のトラック競技の美しいラインから着想を得たデザインが特徴の一足。波状のサイドパネルが独特のシルエットを生み出し、コーディネートに自然な流れを加える。ヒールと前足部にはビジブルAirを搭載し、機能性と快適な履き心地を兼ね備えている。
+      </p>
+      <div class="modal-main-img">
+        <img src="images/AMB1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/AMB2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AMB3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AMB4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Keity 2 -->
+  <div class="modal-overlay" id="modal-keity-2">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">AIRFORCE 1 Wheat</h2>
+      <p class="modal-desc">Nike Air Force 1 Low 'Wheat' は、タフなワークブーツのディテールを取り入れた Nike Air Force 1
+        の人気カラー。ラウンドシューレースや六角ナット型のアイレットを採用し、ワークブーツを思わせる無骨なデザインに。Wheatカラーのアッパーとガムソールが、ストリートでも存在感を放つ仕上がりとなっている。</p>
+      <div class="modal-main-img">
+        <img src="images/AFW1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/AFW2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFW3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/AFW4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+
+  <!-- Modal: Keity 3 -->
+  <div class="modal-overlay" id="modal-keity-3">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title font-oswald">DUNKLOW Velvet Brown</h2>
+      <p class="modal-desc">Nike Dunk Low Retro Premium 'Velvet Brown' は、クラシックな Nike Dunk Low
+        をプレミアム素材で仕上げた一足。アイコニックなカラーブロッキングに、上質な素材と厚みのあるパッドを組み合わせ、快適な履き心地を実現。Velvet
+        Brownを基調とした落ち着いたカラーが、ダンクのクラシックなシルエットを引き立てている。</p>
+      <div class="modal-main-img">
+        <img src="images/DLV1.png" alt="" class="fit-cover w-full h-full" />
+      </div>
+      <div class="modal-thumbs">
+        <div class="modal-thumb"><img src="images/DLV2.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/DLV3.png" alt="" class="fit-cover w-full h-full" /></div>
+        <div class="modal-thumb"><img src="images/DLV4.png" alt="" class="fit-cover w-full h-full" /></div>
+      </div>
+      <p class="modal-cta font-oswald">GOT 'EM</p>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.more-link[data-modal]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modalId = link.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+        if (modal) modal.classList.add('is-open');
+      });
+    });
+
+    document.querySelectorAll('.modal-close').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.modal-overlay').classList.remove('is-open');
+      });
+    });
+
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) overlay.classList.remove('is-open');
+      });
+    });
+  </script>
 </body>
 
 </html>
