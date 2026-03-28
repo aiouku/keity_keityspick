@@ -1,0 +1,841 @@
+/* ===== MOBILE RESPONSIVE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+
+  /* ===== GLOBAL OVERRIDES ===== */
+  body {
+    overflow-x: hidden;
+  }
+
+  .sticky-zone,
+  .sec-recommend,
+  .sec-gallery,
+  .sec-timeline {
+    width: 100vw !important;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  /* Keity needs overflow-x visible for horizontal scroll */
+  .sec-keity {
+    width: 100vw !important;
+    max-width: 100vw;
+    overflow: visible !important;
+  }
+
+  .sticky-zone {
+    background-size: 100vw auto;
+  }
+
+  .section-title {
+    font-size: 48px;
+    left: 20px !important;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    top: 58px;
+    left: 20px !important;
+  }
+
+  .more-link {
+    font-size: 24px;
+    width: auto;
+  }
+
+  /* ===== HEADER / NAV ===== */
+  .site-nav {
+    width: 100vw;
+    height: 140px;
+  }
+
+  .nav-title-bg {
+    font-size: 48px;
+    top: 5px;
+  }
+
+  .nav-subtitle {
+    font-size: 12px;
+    top: 68px;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .nav-link {
+    font-size: 14px;
+    top: 110px !important;
+  }
+
+  .nav-recommend {
+    left: 5% !important;
+  }
+
+  .nav-gallery {
+    left: 28% !important;
+  }
+
+  .nav-keity {
+    left: 50% !important;
+  }
+
+  .nav-timeline {
+    left: 78% !important;
+  }
+
+  .sec-fv {
+    height: 300px;
+    margin-bottom: 140px;
+  }
+
+  /* ===== RECOMMEND SECTION ===== */
+  .sec-recommend {
+    height: auto !important;
+    min-height: 1200px;
+    padding-bottom: 60px;
+  }
+
+  .title-recommend {
+    left: 20px !important;
+  }
+
+  .subtitle-recommend {
+    left: 20px !important;
+  }
+
+  .rec-series-title {
+    top: 100px;
+    left: 20px !important;
+    font-size: 32px;
+    width: auto;
+  }
+
+  .rec-main-title {
+    top: 135px;
+    left: 20px !important;
+    font-size: 64px;
+    width: calc(100vw - 40px);
+    letter-spacing: -0.5px;
+  }
+
+  .rec-main-shoe {
+    position: absolute;
+    top: 210px;
+    left: -20px;
+    width: 100vw;
+    height: auto;
+    max-height: 400px;
+  }
+
+  .rec-logo-aj {
+    top: 260px;
+    left: auto !important;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .rec-logo-jm {
+    top: 530px;
+    left: auto !important;
+    right: 20px;
+    width: 100px;
+    height: 86px;
+  }
+
+  .rec-tagline-wrapper {
+    width: calc(100vw - 40px) !important;
+    height: auto !important;
+    left: 20px !important;
+    top: 440px !important;
+  }
+
+  .rec-tagline-inner {
+    transform: rotate(0deg);
+  }
+
+  .rec-tagline {
+    font-size: 18px;
+    width: auto;
+    text-align: right;
+  }
+
+  .more-rec-1 {
+    top: 530px;
+    left: calc(100vw - 130px) !important;
+  }
+
+  .decor-coffee-1 {
+    width: 600px;
+    height: 600px;
+    left: -150px;
+    top: 150px;
+  }
+
+  .decor-coffee-1-img {
+    width: 500px;
+    height: 470px;
+  }
+
+  .decor-bgm-1 {
+    width: 400px;
+    height: 320px;
+    left: calc(50% - 80px) !important;
+    top: 250px;
+  }
+
+  .decor-bgm-1-img {
+    width: 350px;
+    height: 260px;
+  }
+
+  /* ===== CHICAGO SECTION (within recommend) ===== */
+  .decor-bgm-2 {
+    width: 500px;
+    height: 340px;
+    left: calc(50% - 250px) !important;
+    top: 700px !important;
+  }
+
+  .decor-bgm-2-img {
+    width: 480px;
+    height: 260px;
+  }
+
+  .rec-chicago-vert {
+    width: 110px;
+    height: 300px;
+    left: 0px !important;
+    top: 600px !important;
+  }
+
+  .chicago-vert-text {
+    font-size: 80px;
+    letter-spacing: -2px;
+  }
+
+  .rec-chicago-shoe-wrapper {
+    width: calc(100vw - 20px) !important;
+    height: auto !important;
+    left: 30px !important;
+    top: 740px !important;
+  }
+
+  .rec-chicago-shoe-container {
+    width: calc(100vw - 60px);
+    height: 280px;
+    border-radius: 16px;
+  }
+
+  .absolute-scale-chicago {
+    width: 130%;
+    height: 130%;
+    top: -15%;
+    left: -15%;
+  }
+
+  .rec-chicago-title-wrapper {
+    width: calc(100vw - 40px) !important;
+    height: auto !important;
+    left: 10px !important;
+    top: 740px !important;
+  }
+
+  .rec-chicago-title-inner {
+    transform: rotate(8deg);
+  }
+
+  .chicago-title {
+    font-size: 18px;
+    width: auto;
+    height: auto;
+  }
+
+  .rec-chicago-desc-wrapper {
+    width: calc(100vw - 40px) !important;
+    height: auto !important;
+    left: 10px !important;
+    top: 790px !important;
+  }
+
+  .chicago-desc {
+    font-size: 14px;
+    width: calc(50vw - 30px);
+    height: auto;
+    line-height: 1.6;
+  }
+
+  .more-rec-chicago-wrapper {
+    left: 10px !important;
+    top: 980px !important;
+  }
+
+  .decor-badge {
+    width: 140px;
+    height: 140px;
+    left: calc(100vw - 180px) !important;
+    top: 620px !important;
+  }
+
+  .decor-badge-img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .decor-swreds {
+    width: 400px;
+    height: 240px;
+    left: calc(50% - 40px) !important;
+    top: 1020px !important;
+  }
+
+  .decor-swreds-img {
+    width: 160px;
+    height: 385px;
+  }
+
+  /* ==========================================================
+     FIX #1: GALLERY — full-width AF1 top, then 3 cols × 2 rows
+     ========================================================== */
+  .sec-gallery {
+    height: auto !important;
+    min-height: 700px;
+    padding-bottom: 40px;
+  }
+
+  .title-gallery {
+    left: 20px !important;
+  }
+
+  .subtitle-gallery {
+    left: 20px !important;
+  }
+
+  .gal-cards-container {
+    position: relative;
+    top: 90px;
+    left: 0;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 0 12px;
+    width: 100%;
+  }
+
+  /* Flatten the column wrappers */
+  .gal-col {
+    display: contents;
+  }
+
+  /* White AF1: full width across all 3 columns */
+  .gal-card-left {
+    position: relative !important;
+    grid-column: 1 / -1;
+    width: 100% !important;
+    height: 200px !important;
+    margin-top: 0 !important;
+  }
+
+  .gal-left-wrapper {
+    width: 100% !important;
+    height: 200px !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 3;
+  }
+
+  .gal-left-inner {
+    transform: rotate(180deg);
+  }
+
+  .gal-left-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .absolute-scale-gal-left {
+    width: 110%;
+    height: 130%;
+    top: -15%;
+    left: -5%;
+  }
+
+  .border-left {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 12px;
+    border-width: 4px;
+  }
+
+  .shadow-left {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 55px !important;
+    border-radius: 12px;
+  }
+
+  .more-gal-left {
+    writing-mode: horizontal-tb !important;
+    top: auto !important;
+    bottom: 10px;
+    left: auto !important;
+    right: 10px;
+    height: auto !important;
+    font-size: 20px !important;
+  }
+
+  /* All 6 small cards */
+  .gal-card-center-top,
+  .gal-card-center-mid,
+  .gal-card-center-bot,
+  .gal-card-right-top,
+  .gal-card-right-mid,
+  .gal-card-right-bot {
+    position: relative !important;
+    width: 100% !important;
+    height: 130px !important;
+    margin-top: 0 !important;
+  }
+
+  /* Reorder to 3 cols × 2 rows:
+     Row 1: center-top | right-top | center-mid
+     Row 2: right-mid  | center-bot | right-bot  */
+  .gal-card-center-top { order: 1; }
+  .gal-card-right-top  { order: 2; }
+  .gal-card-center-mid { order: 3; }
+  .gal-card-right-mid  { order: 4; }
+  .gal-card-center-bot { order: 5; }
+  .gal-card-right-bot  { order: 6; }
+
+  /* Image containers fill their card */
+  .gal-img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+    max-width: none !important;
+    overflow: hidden !important;
+  }
+
+  .gal-img img {
+    object-fit: contain !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .gal-img.gal-center-top,
+  .gal-img.gal-center-bot {
+    max-width: none !important;
+    transform: none !important;
+  }
+
+  .gal-img.gal-right-top,
+  .gal-img.gal-right-mid,
+  .gal-img.gal-right-bot {
+    top: 0 !important;
+    inset: 0 !important;
+  }
+
+  .absolute-scale-gal-rt,
+  .absolute-scale-gal-rm,
+  .absolute-scale-gal-rb {
+    transform: scale(0.85) !important;
+  }
+
+  /* Card borders */
+  .border-center-top,
+  .border-center-mid,
+  .border-center-bot,
+  .border-right-top,
+  .border-right-mid,
+  .border-right-bot {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-width: 4px;
+    border-radius: 12px;
+  }
+
+  /* Card shadows */
+  .shadow-center-top,
+  .shadow-center-mid,
+  .shadow-center-bot,
+  .shadow-right-top,
+  .shadow-right-mid,
+  .shadow-right-bot {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 40px !important;
+    border-radius: 12px;
+  }
+
+  /* MORE links */
+  .more-gal,
+  .more-gal-rb {
+    top: auto !important;
+    bottom: 6px !important;
+    left: auto !important;
+    right: 6px !important;
+    font-size: 16px !important;
+  }
+
+  /* Gallery decorations */
+  .decor-supreme {
+    width: 400px;
+    height: 300px;
+    left: calc(50% - 100px) !important;
+    top: 500px;
+  }
+
+  .decor-supreme-img {
+    width: 380px;
+    height: 130px;
+  }
+
+  .decor-cactus {
+    width: 200px;
+    height: 230px;
+    left: -80px !important;
+    top: 500px;
+  }
+
+  .decor-cactus-img {
+    width: 160px;
+    height: 124px;
+  }
+
+  /* ==========================================================
+     FIX #2: KEITY'S GALLERY — all 3 cards visible side-by-side
+     ========================================================== */
+  .sec-keity {
+    height: auto !important;
+    min-height: 340px;
+    padding-bottom: 30px;
+    overflow: visible !important;
+  }
+
+  .title-keity {
+    left: 20px !important;
+  }
+
+  .subtitle-keity {
+    left: 20px !important;
+  }
+
+  .keity-cards-container {
+    position: relative;
+    top: 90px;
+    left: 0;
+    width: 100vw !important;
+    padding: 0 12px;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 10px;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    justify-content: flex-start !important;
+  }
+
+  .keity-cards-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Size each card so all 3 fit on screen */
+  .keity-card {
+    flex: 0 0 calc(33.333vw - 14px);
+    min-width: calc(33.333vw - 14px);
+    scroll-snap-align: start;
+  }
+
+  .keity-card-visual {
+    width: 100% !important;
+    height: 130px !important;
+  }
+
+  .keity-card:nth-child(1) .keity-card-visual,
+  .keity-card:nth-child(2) .keity-card-visual,
+  .keity-card:nth-child(3) .keity-card-visual {
+    width: 100% !important;
+  }
+
+  .keity-img {
+    height: 115px !important;
+    top: 5px !important;
+  }
+
+  .card-border.border-keity {
+    width: calc(100% - 4px) !important;
+    height: 118px !important;
+    top: 6px !important;
+    left: 2px !important;
+    border-width: 3px;
+    border-radius: 10px;
+  }
+
+  .drop-shadow.shadow-keity {
+    width: calc(100% - 4px) !important;
+    height: 40px !important;
+    top: 6px !important;
+    left: 2px !important;
+    border-radius: 10px;
+  }
+
+  .keity-badge {
+    width: 45px !important;
+    height: 45px !important;
+    top: -3px !important;
+    right: -3px !important;
+  }
+
+  .more-keity,
+  .keity-card:nth-child(1) .more-keity,
+  .keity-card:nth-child(2) .more-keity,
+  .keity-card:nth-child(3) .more-keity {
+    top: auto !important;
+    bottom: 2px;
+    left: auto !important;
+    right: 3px;
+    font-size: 13px;
+  }
+
+  .keity-card-text {
+    margin-top: 8px !important;
+    padding-left: 2px !important;
+  }
+
+  .keity-name {
+    font-size: 11px;
+  }
+
+  .keity-desc {
+    font-size: 8px;
+    letter-spacing: -0.3px;
+  }
+
+  .decor-coffee-2 {
+    width: 500px;
+    height: 520px;
+    left: calc(50% - 100px) !important;
+    top: 50px;
+  }
+
+  .decor-coffee-2-img {
+    width: 420px;
+    height: 400px;
+  }
+
+  /* ==========================================================
+     FIX #3: TIMELINE — images placed BELOW text, no overlap
+     Layout per entry: Year → Description → Image (stacked)
+     ========================================================== */
+  .sec-timeline {
+    height: auto !important;
+    min-height: 3600px;
+    padding-bottom: 60px;
+  }
+
+  .title-timeline {
+    top: 200px;
+    left: 20px !important;
+    font-size: 48px;
+  }
+
+  .subtitle-timeline {
+    top: 258px;
+    left: 20px !important;
+    font-size: 14px;
+  }
+
+  .decor-bgl {
+    width: 1600px;
+    height: 1650px;
+    left: -500px;
+  }
+
+  .decor-bgl-img {
+    width: 1160px;
+    height: 1260px;
+  }
+
+  .decor-stussy {
+    left: calc(50% - 50px) !important;
+    top: 2300px;
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Cards: taller to contain year + text + image */
+  .tl-card {
+    width: calc(100vw - 40px) !important;
+    height: 560px !important;
+    border-width: 4px;
+    border-radius: 14px !important;
+  }
+
+  .tl-card-1 { left: 20px !important; top: 350px !important; }
+  .tl-card-2 { left: 20px !important; top: 1000px !important; }
+  .tl-card-3 { left: 20px !important; top: 1650px !important; }
+  .tl-card-4 { left: 20px !important; top: 2300px !important; }
+
+  /* Ghost text behind cards */
+  .tl-bg-text {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .bg-text-1 { left: 20px !important; top: 345px !important; font-size: 120px; width: calc(100vw - 40px) !important; }
+  .bg-text-2 { left: 20px !important; top: 995px !important; font-size: 120px; width: calc(100vw - 40px) !important; }
+  .bg-text-3 { left: 20px !important; top: 1645px !important; font-size: 100px; width: calc(100vw - 40px) !important; }
+  .bg-text-4 { left: 20px !important; top: 2295px !important; font-size: 110px; width: calc(100vw - 40px) !important; }
+
+  /* Year: top area of card */
+  .tl-year { font-size: 56px; }
+  .year-1 { top: 375px !important; left: 40px !important; }
+  .year-2 { top: 1025px !important; left: 40px !important; width: auto !important; }
+  .year-3 { top: 1675px !important; left: 40px !important; width: auto !important; }
+  .year-4 { top: 2325px !important; left: 40px !important; width: auto !important; }
+
+  /* Description: below year, upper portion of card */
+  .tl-desc {
+    font-size: 13px;
+    line-height: 1.5 !important;
+  }
+
+  .desc-1 { top: 445px !important; left: 40px !important; width: calc(100vw - 80px) !important; }
+  .desc-2 { top: 1095px !important; left: 40px !important; width: calc(100vw - 80px) !important; }
+  .desc-3 { top: 1745px !important; left: 40px !important; width: calc(100vw - 80px) !important; }
+  .desc-4 { top: 2395px !important; left: 40px !important; width: calc(100vw - 80px) !important; }
+
+  /* Images: BELOW the text block, lower portion of card */
+  .tl-img-wrapper-1 {
+    width: 420px;
+    height: 300px;
+    left: calc(50% - 250px) !important;
+    top: 620px !important;
+  }
+  .tl-img-inner-1 { transform: rotate(15deg); }
+  .tl-img-1 { width: 370px; height: 200px; }
+
+  .tl-img-wrapper-2 {
+    width: 440px;
+    height: 320px;
+    left: calc(50% - 120px) !important;
+    top: 1250px !important;
+  }
+  .tl-img-inner-2 { transform: rotate(-18deg); }
+  .tl-img-2 { width: 400px; height: 240px; }
+
+  .tl-img-wrapper-3 {
+    width: 420px;
+    height: 340px;
+    left: calc(50% - 120px) !important;
+    top: 1900px !important;
+  }
+  .tl-img-inner-3 { transform: rotate(-22deg); }
+  .tl-img-3 { width: 370px; height: 210px; }
+
+  .tl-img-wrapper-4 {
+    width: 400px;
+    height: 300px;
+    left: calc(50% - 280px) !important;
+    top: 2550px !important;
+  }
+  .tl-img-inner-4 { transform: rotate(16deg); }
+  .tl-img-4 { width: 360px; height: 200px; }
+
+  /* Badges repositioned */
+  .tl-badge-aj {
+    top: 700px;
+    left: calc(100vw - 160px) !important;
+    width: 110px;
+    height: 73px;
+  }
+
+  .tl-badge-skate-wrapper {
+    width: 40px;
+    height: 140px;
+    left: -15px !important;
+    top: 1900px;
+  }
+
+  .tl-badge-skate-container {
+    width: 140px;
+    height: 40px;
+  }
+
+  .tl-badge-sb-wrapper {
+    width: 80px;
+    height: 160px;
+    left: calc(100vw - 110px) !important;
+    top: 2100px;
+  }
+
+  .tl-badge-sb {
+    width: 160px;
+    height: 80px;
+  }
+
+  /* ===== FOOTER ===== */
+  .site-footer {
+    width: 100vw !important;
+    margin: 100px 0 20px 0;
+  }
+
+  .site-footer p {
+    font-size: 14px;
+  }
+
+  /* ===== MODAL ===== */
+  .modal-content {
+    width: 95vw;
+    padding: 32px 24px;
+  }
+
+  .modal-title {
+    font-size: 32px;
+  }
+
+  .modal-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .modal-thumbs {
+    gap: 8px;
+  }
+
+  .modal-thumb {
+    width: 90px;
+    height: 68px;
+    border-width: 2px;
+  }
+
+  .modal-cta {
+    font-size: 32px;
+  }
+
+  .modal-close {
+    font-size: 36px;
+    top: 16px;
+    right: 20px;
+  }
+
+  .modal-main-img img {
+    max-height: 260px;
+  }
+
+  .modal-main-img.img-normal img {
+    width: 90%;
+    max-height: 260px;
+  }
+}
