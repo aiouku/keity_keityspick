@@ -2,8 +2,21 @@
 @media (max-width: 768px) {
 
   /* ===== GLOBAL OVERRIDES ===== */
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  /* Force MORE links & drop shadows visible on mobile (no hover on touch) */
+  .gal-card .drop-shadow,
+  .gal-card .more-link,
+  .keity-card .drop-shadow,
+  .keity-card .more-link {
+    opacity: 1 !important;
   }
 
   .sticky-zone,
@@ -83,28 +96,31 @@
 
   .sec-fv {
     height: 300px;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
   }
 
   /* ===== RECOMMEND SECTION ===== */
   .sec-recommend {
     height: auto !important;
-    min-height: 1200px;
+    min-height: 1300px;
     padding-bottom: 60px;
   }
 
   .title-recommend {
     left: 20px !important;
+    font-size: clamp(30px, 5vw, 22px);
   }
 
   .subtitle-recommend {
     left: 20px !important;
+    font-size: clamp(10px, 5vw, 22px);
   }
 
   .rec-series-title {
     top: 100px;
     left: 20px !important;
-    font-size: 32px;
+    font-size: clamp(10px, 5vw, 32px);
+    /* font-size: 32px; */
     width: auto;
   }
 
@@ -113,39 +129,33 @@
     left: 20px !important;
     font-size: 64px;
     width: calc(100vw - 40px);
+    font-size: clamp(10px, 5vw, 64px);
     letter-spacing: -0.5px;
   }
 
+  /* Main shoe image — centered, reduced height */
   .rec-main-shoe {
     position: absolute;
     top: 210px;
-    left: -20px;
-    width: 100vw;
+    left: 5%;
+    width: 90%;
     height: auto;
-    max-height: 400px;
+    max-height: 280px;
   }
 
-  .rec-logo-aj {
-    top: 260px;
-    left: auto !important;
-    right: 20px;
-    width: 100px;
-    height: 50px;
+  /* MORE > — below shoe, right-center */
+  .more-rec-1 {
+    top: 500px;
+    left: calc(100vw - 150px) !important;
+    font-size: 20px;
   }
 
-  .rec-logo-jm {
-    top: 530px;
-    left: auto !important;
-    right: 20px;
-    width: 100px;
-    height: 86px;
-  }
-
+  /* Tagline — BELOW shoe */
   .rec-tagline-wrapper {
     width: calc(100vw - 40px) !important;
     height: auto !important;
     left: 20px !important;
-    top: 440px !important;
+    top: 510px !important;
   }
 
   .rec-tagline-inner {
@@ -153,14 +163,27 @@
   }
 
   .rec-tagline {
-    font-size: 18px;
+    font-size: 16px;
     width: auto;
     text-align: right;
   }
 
-  .more-rec-1 {
-    top: 530px;
-    left: calc(100vw - 130px) !important;
+  /* AJ Logo — below shoe area, right-center */
+  .rec-logo-aj {
+    top: 240px;
+    left: auto !important;
+    right: 40px;
+    width: 80px;
+    height: 40px;
+  }
+
+  /* JM Logo — below tagline, right-center */
+  .rec-logo-jm {
+    top: 580px;
+    left: auto !important;
+    right: 40px;
+    width: 70px;
+    height: 60px;
   }
 
   .decor-coffee-1 {
@@ -175,68 +198,94 @@
     height: 470px;
   }
 
+  /* BGM decoration 1 — behind shoe area */
   .decor-bgm-1 {
-    width: 400px;
-    height: 320px;
-    left: calc(50% - 80px) !important;
-    top: 250px;
+    width: 200px;
+    height: 500px;
+    left: calc(50% - 40px) !important;
+    top: 320px;
+    z-index: 0;
   }
 
   .decor-bgm-1-img {
-    width: 350px;
-    height: 260px;
+    width: 280px;
+    height: 250px;
+    opacity: 0.7;
+    z-index: 10;
   }
 
-  /* ===== CHICAGO SECTION (within recommend) ===== */
+  /* BGM decoration 2 — behind chicago area, wider to contain text */
   .decor-bgm-2 {
-    width: 500px;
-    height: 340px;
-    left: calc(50% - 250px) !important;
-    top: 700px !important;
+    width: calc(100% - 20px);
+    height: 350px;
+    left: 10px !important;
+    top: 830px !important;
+    z-index: 0;
+  }
+
+  .decor-bgm-2-inner {
+    transform: rotate(8deg);
   }
 
   .decor-bgm-2-img {
-    width: 480px;
-    height: 260px;
+    width: 100%;
+    height: 300px;
+    opacity: 0.7;
   }
 
   .rec-chicago-vert {
-    width: 110px;
-    height: 300px;
-    left: 0px !important;
-    top: 600px !important;
+    height: auto;
+    left: 20px !important;
+    top: 680px !important;
+    transform: none;
+  }
+
+  .rec-chicago-vert-inner {
+    transform: none !important;
   }
 
   .chicago-vert-text {
-    font-size: 80px;
+    font-size: clamp(30px, 5vw, 64px);
+    left: -80px !important;
     letter-spacing: -2px;
+    writing-mode: horizontal-tb !important;
   }
 
+  /* Chicago shoe — RIGHT side of text */
   .rec-chicago-shoe-wrapper {
-    width: calc(100vw - 20px) !important;
-    height: auto !important;
-    left: 30px !important;
-    top: 740px !important;
+    width: 50% !important;
+    height: 500px !important;
+    left: 45% !important;
+    top: 830px !important;
+  }
+
+  .rec-chicago-shoe-inner {
+    transform: rotate(8deg);
   }
 
   .rec-chicago-shoe-container {
-    width: calc(100vw - 60px);
-    height: 280px;
-    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    border-radius: 14px;
   }
 
   .absolute-scale-chicago {
+    position: absolute;
     width: 130%;
     height: 130%;
     top: -15%;
     left: -15%;
+    max-width: none;
   }
 
+  /* Chicago title — left side, inside BGM2 */
   .rec-chicago-title-wrapper {
-    width: calc(100vw - 40px) !important;
+    width: 45% !important;
     height: auto !important;
-    left: 10px !important;
-    top: 740px !important;
+    left: 20px !important;
+    top: 850px !important;
   }
 
   .rec-chicago-title-inner {
@@ -244,47 +293,52 @@
   }
 
   .chicago-title {
-    font-size: 18px;
+    font-size: 14px;
     width: auto;
     height: auto;
   }
 
+  /* Chicago description — left side, below title, inside BGM2 */
   .rec-chicago-desc-wrapper {
-    width: calc(100vw - 40px) !important;
+    width: 42% !important;
     height: auto !important;
-    left: 10px !important;
-    top: 790px !important;
+    left: 20px !important;
+    top: 900px !important;
+  }
+
+  .rec-chicago-desc-inner {
+    transform: rotate(8deg);
   }
 
   .chicago-desc {
-    font-size: 14px;
-    width: calc(50vw - 30px);
+    font-size: 11px;
+    width: 100%;
     height: auto;
-    line-height: 1.6;
+    line-height: 1.4;
   }
 
   .more-rec-chicago-wrapper {
     left: 10px !important;
-    top: 980px !important;
+    top: 1100px !important;
   }
 
   .decor-badge {
-    width: 140px;
-    height: 140px;
-    left: calc(100vw - 180px) !important;
-    top: 620px !important;
+    width: 100px;
+    height: 100px;
+    left: calc(100% - 130px) !important;
+    top: 780px !important;
   }
 
   .decor-badge-img {
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
   }
 
   .decor-swreds {
-    width: 400px;
-    height: 240px;
-    left: calc(50% - 40px) !important;
-    top: 1020px !important;
+    width: 350px;
+    height: 200px;
+    left: calc(50% + 10px) !important;
+    top: 1160px !important;
   }
 
   .decor-swreds-img {
@@ -342,8 +396,9 @@
     z-index: 3;
   }
 
+  /* Remove the 180deg flip — it hides the image on mobile */
   .gal-left-inner {
-    transform: rotate(180deg);
+    transform: none !important;
   }
 
   .gal-left-container {
@@ -352,11 +407,16 @@
     border-radius: 12px;
   }
 
+  /* Reset image to fill the visible container */
   .absolute-scale-gal-left {
-    width: 110%;
-    height: 130%;
-    top: -15%;
-    left: -5%;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    max-width: none;
+    object-fit: cover !important;
+    z-index: 10;
   }
 
   .border-left {
@@ -402,12 +462,29 @@
   /* Reorder to 3 cols × 2 rows:
      Row 1: center-top | right-top | center-mid
      Row 2: right-mid  | center-bot | right-bot  */
-  .gal-card-center-top { order: 1; }
-  .gal-card-right-top  { order: 2; }
-  .gal-card-center-mid { order: 3; }
-  .gal-card-right-mid  { order: 4; }
-  .gal-card-center-bot { order: 5; }
-  .gal-card-right-bot  { order: 6; }
+  .gal-card-center-top {
+    order: 1;
+  }
+
+  .gal-card-right-top {
+    order: 2;
+  }
+
+  .gal-card-center-mid {
+    order: 3;
+  }
+
+  .gal-card-right-mid {
+    order: 4;
+  }
+
+  .gal-card-center-bot {
+    order: 5;
+  }
+
+  .gal-card-right-bot {
+    order: 6;
+  }
 
   /* Image containers fill their card */
   .gal-img {
@@ -676,15 +753,30 @@
   /* Cards: taller to contain year + text + image */
   .tl-card {
     width: calc(100vw - 40px) !important;
-    height: 560px !important;
+    height: 200px !important;
     border-width: 4px;
     border-radius: 14px !important;
   }
 
-  .tl-card-1 { left: 20px !important; top: 350px !important; }
-  .tl-card-2 { left: 20px !important; top: 1000px !important; }
-  .tl-card-3 { left: 20px !important; top: 1650px !important; }
-  .tl-card-4 { left: 20px !important; top: 2300px !important; }
+  .tl-card-1 {
+    left: 20px !important;
+    top: 350px !important;
+  }
+
+  .tl-card-2 {
+    left: 20px !important;
+    top: 1000px !important;
+  }
+
+  .tl-card-3 {
+    left: 20px !important;
+    top: 1650px !important;
+  }
+
+  .tl-card-4 {
+    left: 20px !important;
+    top: 2300px !important;
+  }
 
   /* Ghost text behind cards */
   .tl-bg-text {
@@ -692,17 +784,61 @@
     overflow: hidden;
   }
 
-  .bg-text-1 { left: 20px !important; top: 345px !important; font-size: 120px; width: calc(100vw - 40px) !important; }
-  .bg-text-2 { left: 20px !important; top: 995px !important; font-size: 120px; width: calc(100vw - 40px) !important; }
-  .bg-text-3 { left: 20px !important; top: 1645px !important; font-size: 100px; width: calc(100vw - 40px) !important; }
-  .bg-text-4 { left: 20px !important; top: 2295px !important; font-size: 110px; width: calc(100vw - 40px) !important; }
+  .bg-text-1 {
+    left: 20px !important;
+    top: 345px !important;
+    font-size: 120px;
+    width: calc(100vw - 40px) !important;
+  }
+
+  .bg-text-2 {
+    left: 20px !important;
+    top: 995px !important;
+    font-size: 120px;
+    width: calc(100vw - 40px) !important;
+  }
+
+  .bg-text-3 {
+    left: 20px !important;
+    top: 1645px !important;
+    font-size: 100px;
+    width: calc(100vw - 40px) !important;
+  }
+
+  .bg-text-4 {
+    left: 20px !important;
+    top: 2295px !important;
+    font-size: 110px;
+    width: calc(100vw - 40px) !important;
+  }
 
   /* Year: top area of card */
-  .tl-year { font-size: 56px; }
-  .year-1 { top: 375px !important; left: 40px !important; }
-  .year-2 { top: 1025px !important; left: 40px !important; width: auto !important; }
-  .year-3 { top: 1675px !important; left: 40px !important; width: auto !important; }
-  .year-4 { top: 2325px !important; left: 40px !important; width: auto !important; }
+  .tl-year {
+    font-size: 56px;
+  }
+
+  .year-1 {
+    top: 375px !important;
+    left: 40px !important;
+  }
+
+  .year-2 {
+    top: 1025px !important;
+    left: 40px !important;
+    width: auto !important;
+  }
+
+  .year-3 {
+    top: 1675px !important;
+    left: 40px !important;
+    width: auto !important;
+  }
+
+  .year-4 {
+    top: 2325px !important;
+    left: 40px !important;
+    width: auto !important;
+  }
 
   /* Description: below year, upper portion of card */
   .tl-desc {
@@ -710,10 +846,29 @@
     line-height: 1.5 !important;
   }
 
-  .desc-1 { top: 445px !important; left: 40px !important; width: calc(100vw - 80px) !important; }
-  .desc-2 { top: 1095px !important; left: 40px !important; width: calc(100vw - 80px) !important; }
-  .desc-3 { top: 1745px !important; left: 40px !important; width: calc(100vw - 80px) !important; }
-  .desc-4 { top: 2395px !important; left: 40px !important; width: calc(100vw - 80px) !important; }
+  .desc-1 {
+    top: 445px !important;
+    left: 40px !important;
+    width: calc(100vw - 80px) !important;
+  }
+
+  .desc-2 {
+    top: 1095px !important;
+    left: 40px !important;
+    width: calc(100vw - 80px) !important;
+  }
+
+  .desc-3 {
+    top: 1745px !important;
+    left: 40px !important;
+    width: calc(100vw - 80px) !important;
+  }
+
+  .desc-4 {
+    top: 2395px !important;
+    left: 40px !important;
+    width: calc(100vw - 80px) !important;
+  }
 
   /* Images: BELOW the text block, lower portion of card */
   .tl-img-wrapper-1 {
@@ -722,8 +877,15 @@
     left: calc(50% - 250px) !important;
     top: 620px !important;
   }
-  .tl-img-inner-1 { transform: rotate(15deg); }
-  .tl-img-1 { width: 370px; height: 200px; }
+
+  .tl-img-inner-1 {
+    transform: rotate(15deg);
+  }
+
+  .tl-img-1 {
+    width: 370px;
+    height: 200px;
+  }
 
   .tl-img-wrapper-2 {
     width: 440px;
@@ -731,8 +893,15 @@
     left: calc(50% - 120px) !important;
     top: 1250px !important;
   }
-  .tl-img-inner-2 { transform: rotate(-18deg); }
-  .tl-img-2 { width: 400px; height: 240px; }
+
+  .tl-img-inner-2 {
+    transform: rotate(-18deg);
+  }
+
+  .tl-img-2 {
+    width: 400px;
+    height: 240px;
+  }
 
   .tl-img-wrapper-3 {
     width: 420px;
@@ -740,8 +909,15 @@
     left: calc(50% - 120px) !important;
     top: 1900px !important;
   }
-  .tl-img-inner-3 { transform: rotate(-22deg); }
-  .tl-img-3 { width: 370px; height: 210px; }
+
+  .tl-img-inner-3 {
+    transform: rotate(-22deg);
+  }
+
+  .tl-img-3 {
+    width: 370px;
+    height: 210px;
+  }
 
   .tl-img-wrapper-4 {
     width: 400px;
@@ -749,8 +925,15 @@
     left: calc(50% - 280px) !important;
     top: 2550px !important;
   }
-  .tl-img-inner-4 { transform: rotate(16deg); }
-  .tl-img-4 { width: 360px; height: 200px; }
+
+  .tl-img-inner-4 {
+    transform: rotate(16deg);
+  }
+
+  .tl-img-4 {
+    width: 360px;
+    height: 200px;
+  }
 
   /* Badges repositioned */
   .tl-badge-aj {
